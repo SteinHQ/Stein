@@ -20,11 +20,6 @@ let sessionOptions = {
   cookie: { expires: false }
 };
 
-if (process.env.NODE_ENV === "production") {
-  app.set("trust proxy", 1); // trust first proxy
-  sessionOptions.cookie.secure = true; // serve secure cookies
-}
-
 // set the view engine to ejs
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
@@ -33,10 +28,6 @@ app.use(cookieParser(sessionSecret));
 app.use(session(sessionOptions));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(
-  "/node_modules",
-  express.static(path.resolve(__dirname, "./node_modules"))
-);
 app.use("/assets", express.static(path.resolve(__dirname, "./assets")));
 
 // Init passport

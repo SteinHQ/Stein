@@ -30,7 +30,6 @@
     "bcrypt": "^3.0.6",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
-    "bulma": "^0.7.2",
     "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
