@@ -5,9 +5,12 @@
   "description": "Use Google Sheets as a no-setup data store",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ecosystem.config.js --env production",
+    "start": "pm2 start bin/pm2.config.js --env production",
     "kill": "pm2 kill",
     "dev": "cross-env NODE_ENV=development nodemon index.js"
+  },
+  "bin": {
+    "stein": "./bin/start-stein.js"
   },
   "keywords": [
     "google sheets",
@@ -31,7 +34,6 @@
     "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
-    "crypto": "^1.0.1",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.2",

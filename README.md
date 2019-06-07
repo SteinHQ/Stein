@@ -118,6 +118,22 @@ Read our contributing guide to learn about what contributions we are looking for
 - [Node.js](https://github.com/nodejs/node) + [Express](https://github.com/expressjs/express): The back-end API is an Express app. It responds to requests RESTfully in JSON.
 - [MongoDB](https://github.com/mongodb/mongo): The main data store.
 
+## Partners
+
+Stein officially partners with the following companies, and thanks them for their support!
+
+<p>
+  <a href="https://www.digitalocean.com/">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" height="32px">
+  </a>
+    
+  <a href="https://www.gandi.net/">
+    <img src="https://v4.gandi.net/static/images/illustrations/press/Gandi_logo_black.jpg" height="32px">
+  </a>
+</p>
+
+For any queries regarding partnerships, reach out to [SteinHQ](mailto:hello@steinhq.com).
+
 ## License
 
 The Stein core project is [licensed under GNU GPLv3](./LICENSE).

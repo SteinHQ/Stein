@@ -1,6 +1,7 @@
 const app = require("./app").app,
   crypto = require("crypto"),
   express = require("express"),
+  path = require("path"),
   interfaceRoutes = require("./interfaceRoutes"),
   passport = require("passport"),
   passportInit = require("./helpers/authentication/passportInit"),
@@ -26,13 +27,17 @@ if (process.env.NODE_ENV === "production") {
 
 // set the view engine to ejs
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
 
 app.use(cookieParser(sessionSecret));
 app.use(session(sessionOptions));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use("/node_modules", express.static("./node_modules"));
-app.use("/assets", express.static("./assets"));
+app.use(
+  "/node_modules",
+  express.static(path.resolve(__dirname, "./node_modules"))
+);
+app.use("/assets", express.static(path.resolve(__dirname, "./assets")));
 
 // Init passport
 passportInit(passport);
