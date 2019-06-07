@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<%- include('header'); -%>
+<body>
+<div class="flex-centered">
+    <div class="has-text-centered">
+        <form id="initial-login-form">
+            <input class="input themed-input is-block initial-login-input" type="text" placeholder="Username"
+                   id="username" required>
+            <input class="input themed-input is-block initial-login-input" type="password" placeholder="Password"
+                   id="password" required>
+            <button type="submit" class="button is-rounded initial-login-button">
+                Sign <%= signUp ? "Up" : "In" %>
+            </button>
+        </form>
+    </div>
+</div>
+<img id="login-logo" src="assets/logo.svg">
+
+<script>
+  document.getElementById("initial-login-form").addEventListener("submit", handleLoginAttempt);
+
+  function handleLoginAttempt(event) {
+    event.preventDefault();
+
+    const url = "/initial-login",
+      options = {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          username: document.getElementById("username").value,
+          password: document.getElementById("password").value
+        })
+      }
+
+    fetch(url, options).then(res => {
+      if (!res.ok) {
+        return res.json().then(json => {
+          throw new Error(json.error)
+        });
+      }
+
+      location.reload();
+    }).catch(error => alert(error))
+  }
+</script>
+</body>
+</html>

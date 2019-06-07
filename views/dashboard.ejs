@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<%- include('header'); -%>
+<body>
+<div id="custom-container">
+    <h2 class="is-size-1" id="dashboard-title">Stein Dashboard</h2>
+    <a href="/logout">Log out</a>
+    <div id="sheet-list-title">
+        <%= user.name.split(' ').slice(-1) %>'s Sheets
+        <img src="assets/plus-outline.svg" alt="" id="add-icon">
+    </div>
+    <!-- Starter's info -->
+    <% if (!user.storages.length) { %>
+        <p id="starting-info" class="has-text-grey">
+            Start by adding a sheet
+        </p>
+    <% } %>
+    <!-- List of all sheets -->
+    <% for (let i = 0; i < user.storages.length; i++) { %>
+        <div class="sheet-container">
+            <h3 class="is-size-5">
+                <%= user.storages[i].title %>
+            </h3>
+            <p class="has-text-grey">
+                <span class="baseURL"></span>/v1/storages/<%= user.storages[i]._id %>
+            </p>
+            <% if (user.storages[i].basicHttpAuth) { %>
+                <p class="has-text-grey">
+                    Authentication:
+                    Basic <%= Buffer.from(user.storages[i].basicHttpAuth).toString('base64') %><%= '='.repeat(user.storages[i].basicHttpAuth % 3) %>
+                </p>
+            <% } %>
+            <div class="field has-addons">
+                <p class="control">
+                    <button class="button" onclick="showSettingsModal(<%= i %>)">Settings</button>
+                </p>
+                <p class="control">
+                    <a href="https://docs.google.com/spreadsheets/d/<%= user.storages[i].googleId %>/edit#gid=0"
+                       class="button">Open Sheet</a>
+                </p>
+                <p class="control">
+                    <a onclick="deleteSheet('<%= user.storages[i]._id %>')" class="button remove-button">Remove</a>
+                </p>
+            </div>
+        </div>
+    <% } %>
+</div>
+<!-- Setting Modal starts here -->
+<div class="modal" id="settingsModal">
+    <div class="modal-background" onclick="hideSettingsModal()"></div>
+    <div class="modal-content">
+        <h3 class="is-size-4">Settings - <span id="active-sheet-title"></span></h3>
+        <input type="checkbox" id="basic-auth-toggle" name="set-name" class="switch-input"
+               onclick="toggleBasicAuthVisibility(event)">
+        <label for="basic-auth-toggle" class="switch-label">Basic Authentication</label>
+        <fieldset id="basic-auth-fieldset" disabled>
+            <div class="field columns">
+                <input class="input themed-input column" type="text" placeholder="Username"
+                       id="basic-auth-username" maxlength="24">
+                <input class="input themed-input column" type="text" placeholder="Password"
+                       id="basic-auth-password" maxlength="24">
+            </div>
+        </fieldset>
+        <button class="button themed-ghost-button" type="submit" onclick="saveSettings()">Save Settings</button>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="hideSettingsModal()"></button>
+</div>
+<!-- Add Sheet Modal starts here -->
+<div id="addSheetModal" class="modal">
+    <div class="modal-background" onclick="hideAddSheetModal()"></div>
+    <div class="modal-content">
+        <h3 class="is-size-4">Add Sheet</h3>
+        <div class="field">
+            <div class="control">
+                <input class="input themed-input" id="sheet-url-input" type="url" placeholder="Sheet URL" required>
+            </div>
+        </div>
+        <button type="submit" class="button themed-ghost-button" onclick="addSheet()">Add</button>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="hideAddSheetModal()"></button>
+</div>
+<!-- Add sheet primary button starts here -->
+<a id="add-sheet" class="button is-rounded is-black" onclick="showAddSheetModal()">
+    <img src="assets/plus-outline.svg" alt="" id="add-icon">
+    Add Sheet
+</a>
+<script>
+  const addSheetModal = document.getElementById('addSheetModal'),
+    settingsModal = document.getElementById('settingsModal'),
+    baseURLSegments = window.location.href.split("/"),
+    basicAuthToggle = document.getElementById('basic-auth-toggle'),
+    URLRegex = new RegExp(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=+$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=+$,\w]+@)[A-Za-z0-9.-]+)((?:\/[+~%\/.\w-_]*)?\??(?:[-+=&;%@.\w_]*)#?(?:[\w]*))?)/),
+    sheets = <%- JSON.stringify(user.storages) %>;
+
+  let activeSheet = null;
+
+  const baseURL = baseURLSegments[0] + "//" + baseURLSegments[2];
+  const elements = document.getElementsByClassName('baseURL');
+
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].innerHTML = baseURL;
+  }
+
+  /*---- Sheet API Calling Functions ----*/
+
+  async function addSheet() {
+    const inputURL = document.getElementById('sheet-url-input').value;
+    let sheetId;
+
+    if (!URLRegex.test(inputURL)) return alert('Invalid URL');
+
+    try {
+      sheetId = inputURL.split('spreadsheets/d/')[1].split('/')[0];
+    } catch (err) {
+      return alert('Invalid URL');
+    }
+
+    const queryURL = `/storages`, queryOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        id: sheetId
+      })
+    };
+
+    const response = await fetch(queryURL, queryOptions);
+
+    if (!response.ok) {
+      return alert((await response.json()).error);
+    }
+
+    location.reload();
+  }
+
+  async function deleteSheet(id) {
+    const response = await fetch(`/storages/${id}`, {
+      method: 'DELETE'
+    });
+
+    if (!response.ok) {
+      return alert((await response.json()).error);
+    }
+
+    location.reload();
+  }
+
+  async function saveSettings() {
+    const basicAuthUsername = document.getElementById('basic-auth-username').value,
+      basicAuthPassword = document.getElementById('basic-auth-password').value;
+
+    let basicAuthToken;
+
+    if (basicAuthToggle.checked && basicAuthUsername && (basicAuthUsername.length < 25) && basicAuthPassword && (basicAuthPassword.length < 25)) {
+      basicAuthToken = `${basicAuthUsername}:${basicAuthPassword}`;
+    }
+
+    const queryOptions = {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        basicAuthToken
+      })
+    };
+
+    hideSettingsModal();
+
+    const response = await fetch(`/storage/${activeSheet._id}`, queryOptions);
+    if (!response.ok) return alert('An error occurred')
+    return location.reload();
+  }
+
+  /*---- Add Sheet Modal Functions ----*/
+  function hideAddSheetModal() {
+    addSheetModal.classList.remove('is-active');
+  }
+
+  function showAddSheetModal() {
+    addSheetModal.classList.add('is-active');
+  }
+
+  /*---- Sheet Settings Modal Functions ----*/
+
+  function showSettingsModal(sheetIndex) {
+    activeSheet = sheets[sheetIndex];
+    document.getElementById('active-sheet-title').innerText = activeSheet.title;
+
+    if (activeSheet.basicHttpAuth) {
+      const credentials = activeSheet.basicHttpAuth.split(':');
+      document.getElementById('basic-auth-username').value = credentials[0];
+      document.getElementById('basic-auth-password').value = credentials[1];
+    }
+
+    settingsModal.classList.add('is-active');
+    toggleBasicAuthVisibility();
+  }
+
+  function hideSettingsModal() {
+    settingsModal.classList.remove('is-active');
+  }
+
+  function toggleBasicAuthVisibility(event) {
+    if (event) {
+      activeSheet.basicHttpAuth = event.target.checked ? '' : undefined;
+    }
+
+    document.getElementById('basic-auth-fieldset').disabled = (typeof activeSheet.basicHttpAuth === 'undefined');
+    basicAuthToggle.checked = !(typeof activeSheet.basicHttpAuth === 'undefined');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<head>
+    <title>Stein Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #3D4345;
+            min-height: 100vh;
+        }
+
+        .flex-centered {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #login-info {
+            margin-bottom: 0.5em;
+            color: #666;
+            font-size: 14px;
+        }
+
+        #google-login-button {
+            padding: 0.5em 0.75em;
+            box-sizing: content-box;
+        }
+
+        #google-icon {
+            height: 2em;
+            margin: 0 1em 0 0.75em;
+        }
+
+        #login-button-divider {
+            width: 0;
+            height: 2em;
+            border-left: solid 1px #DBDBDB;
+        }
+
+        #login-button-text {
+            margin: 0 4em;
+        }
+
+        #login-logo {
+            position: absolute;
+            bottom: 2em;
+            width: 6em;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.75;
+        }
+
+        #custom-container {
+            margin: 4em 0 0 4em;
+        }
+
+        #dashboard-title {
+            font-weight: 300;
+            letter-spacing: -0.01em;
+        }
+
+        #sheet-list-title {
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2em;
+            color: #373D40;
+        }
+
+        #add-sheet {
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            font-size: 0.75em;
+            padding: 2em 1.5em;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #191919;
+        }
+
+        #add-icon {
+            height: 1.5em;
+            margin-right: 0.5em;
+        }
+
+        .modal-content {
+            background: #FFF;
+            padding: 2rem;
+        }
+
+        .initial-login-box {
+            padding: 2rem 6rem;
+            border: solid 1px #191919;
+        }
+
+        .field {
+            margin-top: 1rem;
+        }
+
+        .input.themed-input {
+            font-family: 'Open Sans', sans-serif;
+            width: 90%;
+            border: none;
+            border-bottom: solid 1px #191919;
+            box-shadow: none;
+            border-radius: 0;
+            padding-left: 0;
+        }
+
+        .input.themed-input:focus {
+            border-bottom-color: #2574A9;
+        }
+
+        .input.themed-input:disabled {
+            border-bottom-color: #EFEFEF;
+            color: #8E8E8E;
+            cursor: not-allowed;
+        }
+
+        .input.initial-login-input {
+            margin: 1rem 0;
+            width: 16rem;
+            max-width: 95%;
+        }
+
+        .button.themed-ghost-button {
+            height: auto;
+            border-radius: 0;
+            border: solid #191919 1px;
+            padding: 0.5em 1.5em;
+            font-size: 0.875em;
+            margin-top: 0.25em;
+            transition: all ease 0.2s;
+        }
+
+        .button.themed-ghost-button:hover {
+            background: #191919;
+            color: #FFF;
+        }
+
+        .button.initial-login-button {
+            padding: 0.8rem 2rem;
+            margin-top: 0.5rem;
+            height: auto;
+        }
+
+        #starting-info {
+            font-size: 0.875em;
+        }
+
+        .sheet-container {
+            border-left: solid 2px #3D4345;
+            padding: 1em 2em;
+            margin-bottom: 1em;
+        }
+
+        .remove-button {
+            background-color: #FFF !important;
+            transition: all ease 0.2s;
+        }
+
+        .remove-button:hover {
+            background: #FF3860 !important;
+            color: #FFF;
+            border-color: #FF3860;
+        }
+
+        .switch-input {
+            display: none;
+        }
+
+        .switch-label {
+            position: relative;
+            display: inline-block;
+            min-width: 7em;
+            cursor: pointer;
+            font-weight: 500;
+            text-align: left;
+            margin: 0.5em 0;
+            padding: 0.5em 0 0.5em 2.75em;
+        }
+
+        .switch-label:before, .switch-label:after {
+            content: "";
+            position: absolute;
+            margin: 0;
+            outline: 0;
+            top: 50%;
+            -ms-transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .switch-label:before {
+            left: 1px;
+            width: 34px;
+            height: 14px;
+            background-color: #9E9E9E;
+            border-radius: 8px;
+        }
+
+        .switch-label:after {
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+        }
+
+        .switch-label .toggle--on {
+            display: none;
+        }
+
+        .switch-label .toggle--off {
+            display: inline-block;
+        }
+
+        .switch-input:checked + .switch-label:before {
+            background-color: #A5D6A7;
+        }
+
+        .switch-input:checked + .switch-label:after {
+            background-color: #4CAF50;
+            -ms-transform: translate(80%, -50%);
+            -webkit-transform: translate(80%, -50%);
+            transform: translate(80%, -50%);
+        }
+
+        .switch-input:checked + .switch-label .toggle--on {
+            display: inline-block;
+        }
+
+        .switch-input:checked + .switch-label .toggle--off {
+            display: none;
+        }
+
+        .field.columns {
+            margin: 0 0 1em !important;
+        }
+
+        #basic-auth-username {
+            margin-right: 1em;
+        }
+
+        .no-display {
+            display: none;
+        }
+
+        fieldset {
+            border: none;
+        }
+    </style>
+</head>

@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Prefixed environment variables with STEIN_">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="47" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>location</find>
+      <find>all ok</find>
+      <find>delete</find>
+      <find>mongo</find>
+      <find>mongodb://</find>
+      <find>secret</find>
+      <find>process.en</find>
+      <find>crypto</find>
+      <find>mongostore</find>
+      <find>process.</find>
+      <find>path</find>
+      <find>setting</find>
+      <find>#b</find>
+      <find>has-text</find>
+      <find>input</find>
+      <find>in</find>
+      <find>border: sol</find>
+      <find>initial</find>
+      <find>mongoose</find>
+      <find>valid</find>
+      <find>Admin</find>
+      <find>NODE_EN</find>
+      <find>errorhandler</find>
+      <find>&quot;error</find>
+      <find>we ma</find>
+      <find>console.</find>
+      <find>env</find>
+      <find>dotenv</find>
+      <find>dotenc</find>
+      <find>process.env.</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>req.body</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\HOME-PC.HOME\Desktop\webdev\restsheet\</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Shiven Sinha &lt;shivensinha4@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/plus-outline.svg" />
+        <option value="$PROJECT_DIR$/authentication/auth.js" />
+        <option value="$PROJECT_DIR$/helpers/authentication/passport.js" />
+        <option value="$PROJECT_DIR$/controllers/getGoogleAuthorization.js" />
+        <option value="$PROJECT_DIR$/controllers/addSheet.js" />
+        <option value="$PROJECT_DIR$/controllers/isLoggedIn.js" />
+        <option value="$PROJECT_DIR$/controllers/objectDoesMatch.js" />
+        <option value="$PROJECT_DIR$/controllers/passportAuthCallback.js" />
+        <option value="$PROJECT_DIR$/controllers/search.js" />
+        <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/controllers/removeSheet.js" />
+        <option value="$PROJECT_DIR$/controllers/getStorages.js" />
+        <option value="$PROJECT_DIR$/helpers/getStorages.js" />
+        <option value="$PROJECT_DIR$/controllers/views/dashboard.js" />
+        <option value="$PROJECT_DIR$/controllers/searchSheet.js" />
+        <option value="$PROJECT_DIR$/helpers/authentication/passportInit.js" />
+        <option value="$PROJECT_DIR$/controllers/deleteRow.js" />
+        <option value="$PROJECT_DIR$/controllers/appendRow.js" />
+        <option value="$PROJECT_DIR$/models/storage.js" />
+        <option value="$PROJECT_DIR$/controllers/toggleSheetAuth.js" />
+        <option value="$PROJECT_DIR$/controllers/addStorage.js" />
+        <option value="$PROJECT_DIR$/controllers/retrieveSheet.js" />
+        <option value="$PROJECT_DIR$/apiRoutes.js" />
+        <option value="$PROJECT_DIR$/controllers/logInMiddleware.js" />
+        <option value="$PROJECT_DIR$/controllers/logInRedirect.js" />
+        <option value="$PROJECT_DIR$/controllers/readSheet.js" />
+        <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/controllers/editRow.js" />
+        <option value="$PROJECT_DIR$/controllers/removeStorage.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/views/dashboard.ejs" />
+        <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/views/header.ejs" />
+        <option value="$PROJECT_DIR$/interfaceRoutes.js" />
+        <option value="$PROJECT_DIR$/models/admin.js" />
+        <option value="$PROJECT_DIR$/controllers/views/initialLogin.js" />
+        <option value="$PROJECT_DIR$/controllers/logout.js" />
+        <option value="$PROJECT_DIR$/views/initialLogin.ejs" />
+        <option value="$PROJECT_DIR$/controllers/checkAuth.js" />
+        <option value="$PROJECT_DIR$/controllers/updateRequestCount.js" />
+        <option value="$PROJECT_DIR$/controllers/index.js" />
+        <option value="$PROJECT_DIR$/CODE_OF_CONDUCT.md" />
+        <option value="$PROJECT_DIR$/CONTRIBUTING.md" />
+        <option value="$PROJECT_DIR$/controllers/views/login.js" />
+        <option value="$PROJECT_DIR$/ecosystem.config.js" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/helpers/authentication/configuration.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="181" />
+    <option name="y" value="93" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="auth.js&#9;FILE&#9;file:///home/shiven/Desktop/webdev/RestSheet/node_modules/mongoose/tools/auth.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stein-landing-page-server" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\shive\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="ts.external.directory.path" value="C:\Users\shive\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\191.6183.63\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shive\Desktop\webdev\Stein\helpers" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/controllers/views" />
+      <recent name="C:\Users\HOME-PC.HOME\Desktop\webdev\restsheet\controllers" />
+      <recent name="C:\Users\HOME-PC.HOME\Desktop\webdev\restsheet" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="" />
+      <created>1505403383195</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505403383195</updated>
+      <workItem from="1505403391456" duration="4294000" />
+      <workItem from="1505409589259" duration="1255000" />
+      <workItem from="1505411212718" duration="1961000" />
+      <workItem from="1505459883196" duration="2510000" />
+      <workItem from="1505464027678" duration="752000" />
+      <workItem from="1505487356691" duration="3118000" />
+      <workItem from="1505543051351" duration="394000" />
+      <workItem from="1505543710713" duration="3738000" />
+      <workItem from="1505550024213" duration="253000" />
+      <workItem from="1505582787394" duration="3485000" />
+      <workItem from="1505638812711" duration="6387000" />
+      <workItem from="1505725316346" duration="821000" />
+      <workItem from="1505982972372" duration="5703000" />
+      <workItem from="1506077269894" duration="154000" />
+      <workItem from="1506078800677" duration="2406000" />
+      <workItem from="1506088202354" duration="1946000" />
+      <workItem from="1506146726104" duration="4780000" />
+      <workItem from="1506230839259" duration="562000" />
+      <workItem from="1506343343615" duration="599000" />
+      <workItem from="1506437604027" duration="1530000" />
+      <workItem from="1506485910287" duration="9722000" />
+      <workItem from="1507992112132" duration="548000" />
+      <workItem from="1508256414048" duration="2335000" />
+      <workItem from="1508305708320" duration="4637000" />
+      <workItem from="1508316605000" duration="4124000" />
+      <workItem from="1508389770956" duration="11811000" />
+      <workItem from="1508480737464" duration="1775000" />
+      <workItem from="1508507360117" duration="144000" />
+      <workItem from="1508507582743" duration="3669000" />
+      <workItem from="1508566194865" duration="952000" />
+      <workItem from="1508569449580" duration="24000" />
+      <workItem from="1508736395410" duration="2383000" />
+      <workItem from="1512986885025" duration="26000" />
+      <workItem from="1513005520923" duration="394000" />
+      <workItem from="1513346493181" duration="8581000" />
+      <workItem from="1513406007610" duration="3529000" />
+      <workItem from="1513507145319" duration="124000" />
+      <workItem from="1538464863287" duration="33000" />
+      <workItem from="1538465013507" duration="2496000" />
+      <workItem from="1538469461001" duration="4545000" />
+      <workItem from="1538670311993" duration="2297000" />
+      <workItem from="1538676199827" duration="4326000" />
+      <workItem from="1538753805374" duration="15015000" />
+      <workItem from="1538806079306" duration="1192000" />
+      <workItem from="1538845068279" duration="623000" />
+      <workItem from="1541526435048" duration="1592000" />
+      <workItem from="1541661339412" duration="1723000" />
+      <workItem from="1541663320182" duration="8928000" />
+      <workItem from="1541699217430" duration="5576000" />
+      <workItem from="1541747775355" duration="598000" />
+      <workItem from="1541767784718" duration="5482000" />
+      <workItem from="1541786465623" duration="11648000" />
+      <workItem from="1541832492226" duration="1181000" />
+      <workItem from="1541835602063" duration="799000" />
+      <workItem from="1541958066894" duration="4376000" />
+      <workItem from="1542000497049" duration="599000" />
+      <workItem from="1542018308089" duration="1877000" />
+      <workItem from="1542035455924" duration="3417000" />
+      <workItem from="1542084878457" duration="1099000" />
+      <workItem from="1542088272553" duration="11919000" />
+      <workItem from="1542172514627" duration="9202000" />
+      <workItem from="1542192260446" duration="133000" />
+      <workItem from="1554231594366" duration="1268000" />
+      <workItem from="1554313213002" duration="7311000" />
+      <workItem from="1554358888051" duration="6728000" />
+      <workItem from="1554386539267" duration="4165000" />
+      <workItem from="1554532763920" duration="14907000" />
+      <workItem from="1554708362285" duration="3269000" />
+      <workItem from="1554757906130" duration="144000" />
+      <workItem from="1554758759536" duration="281000" />
+      <workItem from="1554795643832" duration="2710000" />
+      <workItem from="1555156282606" duration="472000" />
+      <workItem from="1555564844347" duration="3189000" />
+      <workItem from="1555610251507" duration="2499000" />
+      <workItem from="1555706306630" duration="517000" />
+      <workItem from="1555783388491" duration="2788000" />
+      <workItem from="1555828349907" duration="87000" />
+      <workItem from="1556176007376" duration="1496000" />
+      <workItem from="1556196114332" duration="4663000" />
+      <workItem from="1556601201971" duration="3802000" />
+      <workItem from="1556654548032" duration="1500000" />
+      <workItem from="1556694272303" duration="85000" />
+      <workItem from="1556707701134" duration="1810000" />
+      <workItem from="1556898587673" duration="8850000" />
+      <workItem from="1557119017852" duration="7243000" />
+      <workItem from="1557165986777" duration="632000" />
+      <workItem from="1557288420534" duration="223000" />
+      <workItem from="1557553408536" duration="3142000" />
+      <workItem from="1558373295588" duration="786000" />
+      <workItem from="1558431193441" duration="1080000" />
+      <workItem from="1558508441488" duration="8495000" />
+      <workItem from="1558533034248" duration="989000" />
+      <workItem from="1558534048636" duration="2993000" />
+      <workItem from="1558591762823" duration="6306000" />
+      <workItem from="1558608405405" duration="1012000" />
+      <workItem from="1558620066589" duration="6572000" />
+      <workItem from="1558675054146" duration="810000" />
+      <workItem from="1559142650518" duration="4989000" />
+      <workItem from="1559284022246" duration="3075000" />
+      <workItem from="1559379621832" duration="6987000" />
+      <workItem from="1559800696795" duration="10319000" />
+      <workItem from="1559886919562" duration="1136000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added delete and option for limit on edit and delete.">
+      <created>1508510993137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1508510993137</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Improved code quality, still fixing append and login">
+      <created>1538765329962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538765329962</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Promisified passport config, fixed bugs.">
+      <created>1538767046209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538767046209</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CRUD and search hopefully all bugs fixed, improved code quality, promisified more callbacks. TODO: Write tests, create handlebars library for HTML interpolation.">
+      <created>1538769599334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538769599334</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Started UI changes, login page revamped">
+      <created>1541672766895</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541672766895</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Starter dashboard changes, included assets in commit">
+      <created>1541674991396</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541674991396</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated dashboard UI">
+      <created>1541705304110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541705304110</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added reference to storage spaces in respective user models, used mongoose's populate">
+      <created>1541792089690</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541792089690</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added title to storage space (spreadsheet) schema, facilitated it on adding one">
+      <created>1541794736919</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1541794736919</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Completed UI changes">
+      <created>1541798872905</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541798872905</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Improved Code Quality">
+      <created>1541836384588</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1541836384588</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added endpoint for editing basic HTTP Auth Credentials">
+      <created>1541962485609</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541962485609</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Started sheet settings UI">
+      <created>1542047214019</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1542047214019</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Completed settings UI, changed to perform all requests via fetch, just like that ;)">
+      <created>1542102877347</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542102877347</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Auto Reformatted Code">
+      <created>1542173939328</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542173939328</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changed routes of API to be more RESTful, also integrated READ and SEARCH">
+      <created>1542179718522</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1542179718522</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Changed package name, made app exportable, changed default port">
+      <created>1554315725343</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554315725343</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Prettied everything">
+      <created>1554320494366</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1554320494366</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Integrating it with the hosted platform, separated interface concerns from the core API">
+      <created>1554557184324</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1554557184324</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Separated log in check middlewares">
+      <created>1554583165970</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1554583165971</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Prettied everything">
+      <created>1554708536308</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1554708536308</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Edited to use logInMiddleware">
+      <created>1554757966917</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1554757966917</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Removed console log">
+      <created>1554758852989</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1554758852989</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Modified addStorage controller to accommodate integration">
+      <created>1555566025248</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1555566025248</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updated sheet auth update controller">
+      <created>1555618840755</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1555618840755</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Prettified, improved addStorage catcher">
+      <created>1555790153830</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1555790153831</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added session store">
+      <created>1556608477669</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556608477669</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updated session store">
+      <created>1556657163868</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1556657163868</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated removeStorage to remove the storage ID from user's document as well">
+      <created>1556710418939</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1556710418939</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added support for user request count">
+      <created>1556911994093</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1556911994093</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Removed empty rows in read, added input validation in routes">
+      <created>1557125914763</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1557125914763</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fixed endMonth handler in requestCount">
+      <created>1557553708119</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1557553708119</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added error handler for sheet not found">
+      <created>1557557467678</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1557557467678</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Improved code quality">
+      <created>1558373655678</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1558373655678</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Set checkAuth to respond with JSON on auth failre">
+      <created>1558431345484</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1558431345485</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated dashboard to comply with the API changes, made removeStorage to return a promise instead of directly sending the response">
+      <created>1558522030001</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1558522030001</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Configured to use dotenv for environment variables">
+      <created>1558537018008</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1558537018008</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added crypto">
+      <created>1558593148648</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1558593148648</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Configured dotenv paths">
+      <created>1558594781978</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1558594781978</updated>
+    </task>
+    <task id="LOCAL-00040" summary=" - Moved session, cookie, and other related stuff from app.js to index because they weren't needed in the core API&#10; - Added logout button">
+      <created>1558608605193</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1558608605193</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added admin management and login">
+      <created>1558628090505</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1558628090505</updated>
+    </task>
+    <task id="LOCAL-00042" summary=" - Added option for core routes to first check if res.locals already has the storage retrieved from the DB&#10; - Made updateRequestCount a controller in itself">
+      <created>1559151113985</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1559151113985</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added required docs for open-source, added environment variable support in run scripts&#10;&#10;- Code of Conduct&#10;- Contributing guide">
+      <created>1559385664109</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1559385664109</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Updated README to mention all contribution related files, improved quality&#10;&#10;- Added contributing guide link in README&#10;- Updated logo link&#10;- Improved content">
+      <created>1559386251811</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1559386251811</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added CONTRIBUTING link to README head">
+      <created>1559804725644</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1559804725646</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Added PM2 for production start">
+      <created>1559842648401</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1559842648401</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Configured package.json metadata">
+      <created>1559843340536</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1559843340536</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Prefixed environment variables with STEIN_">
+      <created>1559846148049</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1559846148049</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="343979000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21949404" />
+      <window_info id="Structure" order="1" weight="0.24851191" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32839838" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32789558" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32626426" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" weight="0.39314845" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50223213" side_tool="true" weight="0.3523654" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated sheet auth update controller" />
+    <MESSAGE value="Prettified, improved addStorage catcher" />
+    <MESSAGE value="Added session store" />
+    <MESSAGE value="Updated session store" />
+    <MESSAGE value="Updated removeStorage to remove the storage ID from user's document as well" />
+    <MESSAGE value="Added support for user request count" />
+    <MESSAGE value="Removed empty rows in read, added input validation in routes" />
+    <MESSAGE value="Fixed endMonth handler in requestCount" />
+    <MESSAGE value="Added error handler for sheet not found" />
+    <MESSAGE value="Improved code quality" />
+    <MESSAGE value="Set checkAuth to respond with JSON on auth failre" />
+    <MESSAGE value="Updated dashboard to comply with the API changes, made removeStorage to return a promise instead of directly sending the response" />
+    <MESSAGE value="Configured to use dotenv for environment variables" />
+    <MESSAGE value="Added crypto" />
+    <MESSAGE value="Configured dotenv paths" />
+    <MESSAGE value="Moved session, cookie, and other related stuff from app.js to index because they weren't needed in the core API" />
+    <MESSAGE value=" - Moved session, cookie, and other related stuff from app.js to index because they weren't needed in the core API&#10; - Added logout button" />
+    <MESSAGE value="Added admin management and login" />
+    <MESSAGE value=" - Added option for core routes to first check if res.locals already has the storage retrieved from the DB&#10; - Made updateRequestCount a controller in itself" />
+    <MESSAGE value="Added required docs for open-source, added environment variable support in run scripts&#10;&#10;- Code of Conduct&#10;- Contributing guide" />
+    <MESSAGE value="Updated README to mention all contribution related files, improved quality&#10;&#10;- Added contributing guide link in README&#10;- Updated logo link&#10;- Improved content" />
+    <MESSAGE value="Added CONTRIBUTING link to README head" />
+    <MESSAGE value="Added PM2 for production start" />
+    <MESSAGE value="Configured package.json metadata" />
+    <MESSAGE value="Prefixed environment variables with STEIN_" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prefixed environment variables with STEIN_" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/tools/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.css" />
+    <entry file="file://$PROJECT_DIR$/assets/plus-outline.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="3531" selection-start-line="3531" selection-end-line="3531" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../stein-landing-page-server/dashboard/helpers/getStorages.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.15.3/node-typings/node_modules/@types/node/globals.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="218" column="22" lean-forward="true" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/objectDoesMatch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/searchSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/deleteRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/logInMiddleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/logInRedirect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/appendRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/passportAuthCallback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/getGoogleAuthorization.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/authentication/passportInit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/addStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/toggleSheetAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/removeStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/googleLogin.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/views/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaceRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="135" column="27" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apiRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/checkAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="43" column="5" selection-start-line="40" selection-start-column="11" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="32" column="244" selection-start-line="32" selection-start-column="244" selection-end-line="32" selection-end-column="244" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="207">
+            <caret line="6" column="234" selection-start-line="6" selection-start-column="234" selection-end-line="6" selection-end-column="234" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/authentication/configuration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/initialLogin.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/views/initialLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error-0.log" />
+    <entry file="file://$PROJECT_DIR$/out-0.log" />
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/views/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="64" lean-forward="true" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecosystem.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
