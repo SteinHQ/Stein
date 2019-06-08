@@ -24,7 +24,7 @@
     "url": "git://github.com/SteinHQ/Stein.git"
   },
   "author": "Stein <hello@steinhq.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "basic-auth": "^2.0.1",
     "bcrypt": "^3.0.6",

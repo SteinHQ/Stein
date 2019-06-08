@@ -136,6 +136,4 @@ For any queries regarding partnerships, reach out to [SteinHQ](mailto:hello@stei
 
 ## License
 
-The Stein core project is [licensed under GNU GPLv3](./LICENSE).
-
-To distribute commercially licensed software with Stein and not distribute the source code for the commercially licensed software under version 3 of the GNU General Public License (the "GPL"), contact [SteinHQ](mailto:hello@steinhq.com).
+The Stein core project is [MIT licensed](./LICENSE).
