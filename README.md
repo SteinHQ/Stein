@@ -116,7 +116,7 @@ Read our contributing guide to learn about what contributions we are looking for
 ## Built With
 
 - [Node.js](https://github.com/nodejs/node) + [Express](https://github.com/expressjs/express): The back-end API is an Express app. It responds to requests RESTfully in JSON.
-- [MongoDB](https://github.com/mongodb/mongo): The main data store.
+- [MongoDB](https://github.com/mongodb/mongo): The store for data Stein needs to function (OAuth tokens, API lists, etc.)
 
 ## Partners
 
