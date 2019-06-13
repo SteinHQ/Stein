@@ -1,5 +1,6 @@
 const mongoose = require("mongoose"),
-  refresh = require("passport-oauth2-refresh");
+  googleAuthLib = require("google-auth-library"),
+  googleOAuthConfig = require("../helpers/authentication/configuration").google;
 
 const schema = mongoose.Schema({
   name: String,
@@ -33,43 +34,45 @@ schema.statics.findOrCreate = function(
         userObj.accessToken = accessToken;
         userObj.save((error, user) => resolve({ error, user }));
       } else {
-        this.refreshAccessCode(result.googleId).then(result =>
-          resolve({ error: null, user: result })
-        );
+        result.refreshToken = refreshToken;
+        result
+          .save()
+          .then(() => this.refreshAccessCode(result.googleId))
+          .then(result => resolve({ error: null, user: result }));
       }
     });
   });
 };
 
 schema.statics.refreshAccessCode = function(googleId) {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     this.findOne({ googleId }, (err, result) => {
       const now = new Date();
-      if (now.getTime() > result.expiresAt) {
-        refresh.requestNewAccessToken(
-          "google",
-          result.refreshToken,
-          (err, accessToken) => {
-            if (err) {
-              return err;
-            } else {
-              const newData = result;
-              newData.expiresAt = now.setTime(now.getTime() + 1000 * 3599);
-              newData.accessToken = accessToken;
-              this.findOneAndUpdate(
-                { googleId },
-                { $set: newData },
-                { new: true },
-                (err, doc) => {
-                  if (err) {
-                    return err;
-                  }
-                  resolve(doc);
-                }
-              );
-            }
-          }
+      if (now.getTime() < result.expiresAt) {
+        const oauth2Client = new googleAuthLib.OAuth2Client(
+          googleOAuthConfig.clientID,
+          googleOAuthConfig.clientSecret,
+          googleOAuthConfig.callbackURL
         );
+
+        oauth2Client.setCredentials({
+          refresh_token: result.refreshToken
+        });
+
+        oauth2Client.getAccessToken().then(response => {
+          this.findOneAndUpdate(
+            { googleId },
+            {
+              $set: {
+                accessToken: response.token,
+                expiresAt: now.setTime(now.getTime() + 1000 * 3590) // A bit less than 1 hour
+              }
+            },
+            { new: true }
+          )
+            .then(doc => resolve(doc))
+            .catch(err => reject(err));
+        });
       } else {
         resolve(result);
       }

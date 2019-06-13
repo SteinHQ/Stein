@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
     .then(result => {
       // If sheet doesn't exist, send 404
       if (!result) {
-        next(apiNotFoundError);
+        return next(apiNotFoundError);
       }
 
       // First check if Basic HTTP Auth is enabled on sheet

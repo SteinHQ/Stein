@@ -1,6 +1,5 @@
 const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy,
   authConfig = require("./configuration"),
-  refresh = require("passport-oauth2-refresh"),
   User = require("../../models/user");
 
 module.exports = passport => {
@@ -22,7 +21,7 @@ module.exports = passport => {
     },
     (accessToken, refreshToken, params, profile, done) => {
       User.findOrCreate(accessToken, refreshToken, params, profile).then(
-        ({error, user}) => {
+        ({ error, user }) => {
           return done(error, user);
         }
       );
@@ -30,6 +29,4 @@ module.exports = passport => {
   );
 
   passport.use(Strategy);
-
-  refresh.use(Strategy);
 };
