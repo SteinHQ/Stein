@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("../helpers/db");
 
 const schema = mongoose.Schema({
   googleId: {

@@ -1,5 +1,3 @@
-const mongoose = require("mongoose");
-
 module.exports = (req, res, next) => {
   const user = res.locals.user;
 

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose"),
+const mongoose = require("../helpers/db"),
   googleAuthLib = require("google-auth-library"),
   googleOAuthConfig = require("../helpers/authentication/configuration").google;
 

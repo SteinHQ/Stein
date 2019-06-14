@@ -1,6 +1,6 @@
 const express = require("express"),
   routes = require("./apiRoutes"),
-  mongoose = require("mongoose"),
+  mongoose = require("./helpers/db"),
   path = require("path"),
   dotenv = require("dotenv"),
   bodyParser = require("body-parser"),
@@ -9,9 +9,6 @@ const express = require("express"),
 dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 const app = express();
-
-mongoose.connect(process.env.STEIN_MONGO_URL, { useNewUrlParser: true });
-mongoose.Promise = require("bluebird");
 
 app.use(cors());
 app.use(bodyParser.json({ type: () => true }));
