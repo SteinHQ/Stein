@@ -1,11 +1,16 @@
 // Add a sheet to be used as a storage
 const Storage = require("../models/storage"),
   googleAuthLib = require("google-auth-library"),
+  googleOAuthConfig = require("../helpers/authentication/configuration").google,
   { google } = require("googleapis");
 
 module.exports = (req, res, next) => {
   const sheets = google.sheets("v4"),
-    oauth2Client = new googleAuthLib.OAuth2Client();
+    oauth2Client = new googleAuthLib.OAuth2Client(
+      googleOAuthConfig.clientID,
+      googleOAuthConfig.clientSecret,
+      googleOAuthConfig.callbackURL
+    );
 
   oauth2Client.credentials = {
     access_token: req.user.accessToken,

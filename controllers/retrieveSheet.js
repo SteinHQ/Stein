@@ -1,10 +1,15 @@
 const googleAuthLib = require("google-auth-library"),
+  googleOAuthConfig = require("../helpers/authentication/configuration").google,
   { google } = require("googleapis");
 
 // result argument is what db returned on query
 module.exports = (validUser, result, query) => {
   const sheets = google.sheets("v4"),
-    oauth2Client = new googleAuthLib.OAuth2Client();
+    oauth2Client = new googleAuthLib.OAuth2Client(
+      googleOAuthConfig.clientID,
+      googleOAuthConfig.clientSecret,
+      googleOAuthConfig.callbackURL
+    );
 
   oauth2Client.credentials = {
     access_token: validUser.accessToken,
