@@ -6,8 +6,12 @@ module.exports = (req, res, next) => {
 
     // If passed the end date of accounting month, update it. Else, just add one to count
     if (currentDate > user.monthEnd) {
-      currentDate.setMonth(user.monthEnd.getMonth() + 1);
-      user.monthEnd = currentDate;
+      user.monthEnd.setMonth(
+        currentDate.getDate() >= user.monthEnd.getDate()
+          ? currentDate.getMonth() + 1
+          : currentDate.getMonth()
+      );
+      user.markModified("monthEnd");
       user.requestCount = 1;
     } else {
       user.requestCount += 1;
