@@ -42,12 +42,8 @@ module.exports = (validUser, result, query) => {
             tempValues = values[i];
 
           // Assign all values to keys (columns) of the row
-          for (
-            let valueCount = 0;
-            valueCount < tempValues.length;
-            valueCount++
-          ) {
-            tempRow[keys[valueCount]] = tempValues[valueCount];
+          for (let keyIndex = 0; keyIndex < keys.length; keyIndex++) {
+            tempRow[keys[keyIndex]] = tempValues[keyIndex];
           }
 
           // If not empty, add to array of parsed rows

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Created db.js file to as source of mongoose connection">
+    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Fixed handling of empty values&#10;&#10;-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/updateRequestCount.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/updateRequestCount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/readSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/readSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/retrieveSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/retrieveSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/db.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +24,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="110">
+              <caret line="106" column="1" lean-forward="true" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -42,8 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#b</find>
-      <find>has-text</find>
       <find>input</find>
       <find>in</find>
       <find>border: sol</find>
@@ -72,6 +90,8 @@
       <find>mongoose =</find>
       <find>mongoose.conn</find>
       <find>mongoose</find>
+      <find>log`</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace>req.body</replace>
@@ -109,8 +129,6 @@
         <option value="$PROJECT_DIR$/apiRoutes.js" />
         <option value="$PROJECT_DIR$/controllers/logInMiddleware.js" />
         <option value="$PROJECT_DIR$/controllers/logInRedirect.js" />
-        <option value="$PROJECT_DIR$/controllers/readSheet.js" />
-        <option value="$PROJECT_DIR$/controllers/editRow.js" />
         <option value="$PROJECT_DIR$/controllers/removeStorage.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/views/dashboard.ejs" />
@@ -135,7 +153,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/controllers/checkAuth.js" />
         <option value="$PROJECT_DIR$/helpers/authentication/passportInit.js" />
-        <option value="$PROJECT_DIR$/controllers/retrieveSheet.js" />
         <option value="$PROJECT_DIR$/controllers/addStorage.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/bin/start-stein.js" />
@@ -143,8 +160,11 @@
         <option value="$PROJECT_DIR$/models/storage.js" />
         <option value="$PROJECT_DIR$/models/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/helpers/db.js" />
         <option value="$PROJECT_DIR$/controllers/updateRequestCount.js" />
+        <option value="$PROJECT_DIR$/helpers/db.js" />
+        <option value="$PROJECT_DIR$/controllers/editRow.js" />
+        <option value="$PROJECT_DIR$/controllers/retrieveSheet.js" />
+        <option value="$PROJECT_DIR$/controllers/readSheet.js" />
       </list>
     </option>
   </component>
@@ -155,7 +175,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="143" />
+    <option name="y" value="52" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -189,11 +210,6 @@
             <path>
               <item name="SteinHQ-Stein" type="b2602c69:ProjectViewProjectNode" />
               <item name="SteinHQ-Stein" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SteinHQ-Stein" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SteinHQ-Stein" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,14 +380,8 @@
       <workItem from="1560409231761" duration="1801000" />
       <workItem from="1560437856273" duration="10895000" />
       <workItem from="1560520284932" duration="10283000" />
-      <workItem from="1560664945885" duration="4350000" />
-    </task>
-    <task id="LOCAL-00006" summary="Starter dashboard changes, included assets in commit">
-      <created>1541674991396</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1541674991396</updated>
+      <workItem from="1560664945885" duration="4384000" />
+      <workItem from="1561376073490" duration="1983000" />
     </task>
     <task id="LOCAL-00007" summary="Updated dashboard UI">
       <created>1541705304110</created>
@@ -709,11 +719,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560538401848</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Fixed updateRequestCount monthEnd handler">
+      <created>1560694545815</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1560694545815</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="383036000" />
+    <option name="totallyTimeSpent" value="385053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -733,7 +750,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32789558" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32626426" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" weight="0.39314845" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.32300162" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50223213" side_tool="true" weight="0.3523654" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -745,7 +762,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed empty rows in read, added input validation in routes" />
     <MESSAGE value="Fixed endMonth handler in requestCount" />
     <MESSAGE value="Added error handler for sheet not found" />
     <MESSAGE value="Improved code quality" />
@@ -770,7 +786,8 @@
     <MESSAGE value="checkAuth bug fix, user access token refresh fix&#10;&#10;- Updated checkAuth to return when no storage is found&#10;- Configured to use google-auth-lib for updating access token from refresh token" />
     <MESSAGE value="Included clientID and secret in all sheet API call autorizations" />
     <MESSAGE value="Created db.js file to as source of mongoose connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created db.js file to as source of mongoose connection" />
+    <MESSAGE value="Fixed updateRequestCount monthEnd handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed updateRequestCount monthEnd handler" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js" />
@@ -821,13 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1011,13 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/pm2.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1039,31 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/storage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="30" selection-end-line="5" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1088,13 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1104,8 +1079,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="368">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="106" column="1" lean-forward="true" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
