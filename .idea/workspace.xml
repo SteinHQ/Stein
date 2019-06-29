@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Fixed handling of empty values&#10;&#10;-">
+    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/readSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/readSheet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/retrieveSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/retrieveSheet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/updateRequestCount.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/updateRequestCount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,29 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="106" column="1" lean-forward="true" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
+        <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="253">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -62,7 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input</find>
       <find>in</find>
       <find>border: sol</find>
       <find>initial</find>
@@ -92,6 +72,7 @@
       <find>mongoose</find>
       <find>log`</find>
       <find>log</find>
+      <find>monthEnd</find>
     </findStrings>
     <replaceStrings>
       <replace>req.body</replace>
@@ -160,11 +141,11 @@
         <option value="$PROJECT_DIR$/models/storage.js" />
         <option value="$PROJECT_DIR$/models/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/controllers/updateRequestCount.js" />
         <option value="$PROJECT_DIR$/helpers/db.js" />
         <option value="$PROJECT_DIR$/controllers/editRow.js" />
         <option value="$PROJECT_DIR$/controllers/retrieveSheet.js" />
         <option value="$PROJECT_DIR$/controllers/readSheet.js" />
+        <option value="$PROJECT_DIR$/controllers/updateRequestCount.js" />
       </list>
     </option>
   </component>
@@ -381,14 +362,9 @@
       <workItem from="1560437856273" duration="10895000" />
       <workItem from="1560520284932" duration="10283000" />
       <workItem from="1560664945885" duration="4384000" />
-      <workItem from="1561376073490" duration="1983000" />
-    </task>
-    <task id="LOCAL-00007" summary="Updated dashboard UI">
-      <created>1541705304110</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1541705304110</updated>
+      <workItem from="1561376073490" duration="2686000" />
+      <workItem from="1561745585365" duration="1231000" />
+      <workItem from="1561788508653" duration="248000" />
     </task>
     <task id="LOCAL-00008" summary="Added reference to storage spaces in respective user models, used mongoose's populate">
       <created>1541792089690</created>
@@ -726,11 +702,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560694545815</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row">
+      <created>1561378148242</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1561378148243</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="385053000" />
+    <option name="totallyTimeSpent" value="387235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -750,7 +733,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32789558" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32626426" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.32300162" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" weight="0.32300162" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50223213" side_tool="true" weight="0.3523654" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -762,7 +745,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed endMonth handler in requestCount" />
     <MESSAGE value="Added error handler for sheet not found" />
     <MESSAGE value="Improved code quality" />
     <MESSAGE value="Set checkAuth to respond with JSON on auth failre" />
@@ -787,7 +769,8 @@
     <MESSAGE value="Included clientID and secret in all sheet API call autorizations" />
     <MESSAGE value="Created db.js file to as source of mongoose connection" />
     <MESSAGE value="Fixed updateRequestCount monthEnd handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed updateRequestCount monthEnd handler" />
+    <MESSAGE value="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js" />
@@ -1049,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/start-stein.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1077,13 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1100,29 +1069,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="106" column="1" lean-forward="true" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+        <state relative-caret-position="2438">
+          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="989">
           <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="621">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
