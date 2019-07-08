@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row">
+    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="A">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/updateRequestCount.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/updateRequestCount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/deleteRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/deleteRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/editRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/editRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/readSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/readSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/retrieveSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/retrieveSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/searchSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/searchSheet.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,10 +27,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
+        <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="161">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="21" column="85" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/deleteRow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/searchSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -43,7 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>in</find>
       <find>border: sol</find>
       <find>initial</find>
       <find>valid</find>
@@ -73,6 +120,7 @@
       <find>log`</find>
       <find>log</find>
       <find>monthEnd</find>
+      <find>retr</find>
     </findStrings>
     <replaceStrings>
       <replace>req.body</replace>
@@ -103,8 +151,6 @@
         <option value="$PROJECT_DIR$/controllers/removeSheet.js" />
         <option value="$PROJECT_DIR$/controllers/getStorages.js" />
         <option value="$PROJECT_DIR$/helpers/getStorages.js" />
-        <option value="$PROJECT_DIR$/controllers/searchSheet.js" />
-        <option value="$PROJECT_DIR$/controllers/deleteRow.js" />
         <option value="$PROJECT_DIR$/controllers/appendRow.js" />
         <option value="$PROJECT_DIR$/controllers/toggleSheetAuth.js" />
         <option value="$PROJECT_DIR$/apiRoutes.js" />
@@ -142,10 +188,12 @@
         <option value="$PROJECT_DIR$/models/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/helpers/db.js" />
-        <option value="$PROJECT_DIR$/controllers/editRow.js" />
-        <option value="$PROJECT_DIR$/controllers/retrieveSheet.js" />
-        <option value="$PROJECT_DIR$/controllers/readSheet.js" />
         <option value="$PROJECT_DIR$/controllers/updateRequestCount.js" />
+        <option value="$PROJECT_DIR$/controllers/readSheet.js" />
+        <option value="$PROJECT_DIR$/controllers/deleteRow.js" />
+        <option value="$PROJECT_DIR$/controllers/editRow.js" />
+        <option value="$PROJECT_DIR$/controllers/searchSheet.js" />
+        <option value="$PROJECT_DIR$/controllers/retrieveSheet.js" />
       </list>
     </option>
   </component>
@@ -156,8 +204,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="143" />
-    <option name="y" value="52" />
+    <option name="x" value="432" />
+    <option name="y" value="203" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -185,6 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,11 +241,15 @@
               <item name="SteinHQ-Stein" type="b2602c69:ProjectViewProjectNode" />
               <item name="SteinHQ-Stein" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SteinHQ-Stein" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SteinHQ-Stein" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,14 +417,10 @@
       <workItem from="1560664945885" duration="4384000" />
       <workItem from="1561376073490" duration="2686000" />
       <workItem from="1561745585365" duration="1231000" />
-      <workItem from="1561788508653" duration="248000" />
-    </task>
-    <task id="LOCAL-00008" summary="Added reference to storage spaces in respective user models, used mongoose's populate">
-      <created>1541792089690</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1541792089690</updated>
+      <workItem from="1561788508653" duration="1382000" />
+      <workItem from="1562041678070" duration="661000" />
+      <workItem from="1562348986848" duration="7000" />
+      <workItem from="1562601314478" duration="3806000" />
     </task>
     <task id="LOCAL-00009" summary="Added title to storage space (spreadsheet) schema, facilitated it on adding one">
       <created>1541794736919</created>
@@ -709,11 +758,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561378148243</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Configured updateRequestCount to also update year when needed">
+      <created>1561788796403</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1561788796403</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="387235000" />
+    <option name="totallyTimeSpent" value="392843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -745,7 +801,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added error handler for sheet not found" />
     <MESSAGE value="Improved code quality" />
     <MESSAGE value="Set checkAuth to respond with JSON on auth failre" />
     <MESSAGE value="Updated dashboard to comply with the API changes, made removeStorage to return a promise instead of directly sending the response" />
@@ -770,7 +825,8 @@
     <MESSAGE value="Created db.js file to as source of mongoose connection" />
     <MESSAGE value="Fixed updateRequestCount monthEnd handler" />
     <MESSAGE value="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed handling of empty values&#10;&#10;- Read operation returns null for empty key values, instead of ignoring them&#10;- Update operation now also updates columns that were previously unset for the row" />
+    <MESSAGE value="Configured updateRequestCount to also update year when needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured updateRequestCount to also update year when needed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js" />
@@ -796,20 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/searchSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/deleteRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/logInMiddleware.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -821,13 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/appendRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -983,20 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/checkAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/authentication/passportInit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1067,27 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2438">
-          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1102,10 +1102,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/checkAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/updateRequestCount.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="322">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/appendRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/readSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="21" column="85" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/deleteRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/editRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/searchSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/retrieveSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>

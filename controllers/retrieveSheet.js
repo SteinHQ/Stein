@@ -3,7 +3,7 @@ const googleAuthLib = require("google-auth-library"),
   { google } = require("googleapis");
 
 // result argument is what db returned on query
-module.exports = (validUser, result, query) => {
+module.exports = (validUser, result, query, rowLimit = Infinity) => {
   const sheets = google.sheets("v4"),
     oauth2Client = new googleAuthLib.OAuth2Client(
       googleOAuthConfig.clientID,
@@ -25,6 +25,14 @@ module.exports = (validUser, result, query) => {
         range: query.sheet
       })
       .then(response => {
+        if (response.data.values.length > rowLimit) {
+          reject({
+            code: 429,
+            message:
+              "As per your subscription, you have exceeded the number of rows allowed in your sheet. Upgrade your plan to resume services."
+          });
+        }
+
         // Now parse the data into array of objects
         const parsed = [],
           values = response.data.values;

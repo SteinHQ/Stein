@@ -13,7 +13,7 @@ module.exports = (req, res, next) => {
       const query = { sheet: req.params.sheet, limit: req.query.limit };
 
       // Pass the valid user and result to the function which reads and parses the sheets, so as to supply the googleId of the sheet with the appropriate OAuth details.
-      retrieveSheet(validUser, res.locals.sheetIdDbResult, query)
+      retrieveSheet(validUser, res.locals.sheetIdDbResult, query, res.locals.rowLimit)
         .then(data => {
           getIdAndForward(data, req, res, next);
         })
