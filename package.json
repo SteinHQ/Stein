@@ -1,6 +1,6 @@
 {
   "name": "stein-core",
-  "version": "0.0.1-beta.9",
+  "version": "0.0.1",
   "homepage": "https://steinhq.com/",
   "description": "Use Google Sheets as a no-setup data store",
   "main": "index.js",
