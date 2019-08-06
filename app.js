@@ -10,6 +10,11 @@ dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 const app = express();
 
+if (process.env.NODE_ENV === "development") {
+  const responseTime = require("response-time");
+  app.use(responseTime((req, res, time) => console.log("Took time", time)));
+}
+
 app.use(cors());
 app.use(bodyParser.json({ type: () => true }));
 app.use(bodyParser.urlencoded({ extended: false }));

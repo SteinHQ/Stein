@@ -1,10 +1,12 @@
 const Admin = require("../../models/admin");
 
 module.exports = (req, res) => {
-  if (req.isAuthenticated()) {
-    res.redirect("dashboard");
-  } else if (req.session.initialLoggedIn) {
-    res.render("googleLogin.ejs");
+  if (req.session.initialLoggedIn) {
+    if (req.isAuthenticated()) {
+      res.redirect("dashboard");
+    } else {
+      res.render("googleLogin.ejs");
+    }
   } else {
     Admin.countDocuments().then(count => {
       const options = { signUp: false };
