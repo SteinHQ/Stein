@@ -1,14 +1,16 @@
 // Searches an array of objects according to property(ies)
 
-const objectDoesMatch = require("./objectDoesMatch");
+const {
+  massageSelector,
+  filterInMemoryFields,
+} = require('pouchdb-selector-core');
 
 module.exports = (query, data, limit, offset) => {
-  const answers = [];
-  for (let i = 0; i < data.length && answers.length < limit + offset; i++) {
-    if (objectDoesMatch(query, data[i])) {
-      answers.push(data[i]);
-    }
-  }
+  const rows = data.map(item => ({ doc: item }));
+  const selector = massageSelector(query);
+  const rowsMatched = filterInMemoryFields(rows, { 'selector': selector }, Object.keys(selector));
 
-  return answers.slice(offset);
+  const rowsSelected = rowsMatched.slice(offset, offset + limit);
+  const answers = rowsSelected.map(row => row.doc);
+  return answers;
 };

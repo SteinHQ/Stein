@@ -44,6 +44,7 @@
     "passport": "^0.4.0",
     "passport-google-oauth": "2.0.0",
     "pm2": "^3.5.1",
+    "pouchdb-selector-core": "^7.2.2",
     "request": "^2.88.0"
   },
   "devDependencies": {
