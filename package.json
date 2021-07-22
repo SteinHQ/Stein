@@ -7,7 +7,7 @@
   "scripts": {
     "start": "pm2 start bin/pm2.config.js --env production",
     "kill": "pm2 kill",
-    "dev": "cross-env NODE_ENV=development nodemon index.js"
+    "dev": "cross-env NODE_ENV=development nodemon --trace-warnings index.js"
   },
   "bin": {
     "stein": "./bin/start-stein.js"
@@ -27,29 +27,29 @@
   "license": "MIT",
   "dependencies": {
     "basic-auth": "^2.0.1",
-    "bcrypt": "^3.0.6",
-    "bluebird": "^3.5.1",
+    "bcrypt": "^5.0.1",
+    "bluebird": "^3.7.2",
     "body-parser": "^1.18.2",
-    "connect-mongo": "^2.0.3",
-    "cookie-parser": "^1.4.3",
+    "connect-mongo": "^4.4.1",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.4",
-    "dotenv": "^8.0.0",
-    "ejs": "^2.6.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.16.2",
-    "express-session": "^1.15.6",
-    "google-auth-library": "^2.0.0",
-    "googleapis": "^34.0.0",
-    "mongoose": "^5.3.0",
-    "ow": "^0.12.0",
-    "passport": "^0.4.0",
+    "express-session": "^1.17.2",
+    "google-auth-library": "^7.3.0",
+    "googleapis": "^82.0.0",
+    "mongoose": "^5.13.3",
+    "ow": "^0.27.0",
+    "passport": "^0.4.1",
     "passport-google-oauth": "2.0.0",
-    "pm2": "^3.5.1",
-    "request": "^2.88.0"
+    "pm2": "^5.1.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.3",
     "errorhandler": "^1.5.0",
-    "nodemon": "^1.18.10",
+    "nodemon": "^2.0.12",
     "response-time": "^2.3.2"
   },
   "eslintConfig": {
