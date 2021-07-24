@@ -1,21 +1,21 @@
 const app = require("./app").app,
-    crypto = require("crypto"),
-    express = require("express"),
-    path = require("path"),
-    interfaceRoutes = require("./interfaceRoutes"),
-    passport = require("passport"),
-    passportInit = require("./helpers/authentication/passportInit"),
-    session = require("express-session"),
-    cookieParser = require("cookie-parser");
+  crypto = require("crypto"),
+  express = require("express"),
+  path = require("path"),
+  interfaceRoutes = require("./interfaceRoutes"),
+  passport = require("passport"),
+  passportInit = require("./helpers/authentication/passportInit"),
+  session = require("express-session"),
+  cookieParser = require("cookie-parser");
 
 const mongoStoreOptions = {
-  mongoUrl: process.env.STEIN_MONGO_URL
+  mongoUrl: process.env.STEIN_MONGO_URL,
 };
 
 const MongoStore = require("connect-mongo"),
-    sessionSecret =
-        process.env.STEIN_SESSION_SECRET ||
-        crypto.randomBytes(6).toString("hex");
+  sessionSecret =
+    process.env.STEIN_SESSION_SECRET ||
+    crypto.randomBytes(6).toString("hex");
 
 let sessionOptions = {
   secret: sessionSecret,
@@ -40,7 +40,7 @@ passportInit(passport);
 
 interfaceRoutes(app);
 
-app.use((error, req, res) => {
+app.use((error, req, res, next) => {
   console.error(error);
 
   // If error has status code specified

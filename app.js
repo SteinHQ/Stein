@@ -1,10 +1,10 @@
 const express = require("express"),
-    routes = require("./apiRoutes"),
-    mongoose = require("./helpers/db"),
-    path = require("path"),
-    dotenv = require("dotenv"),
-    bodyParser = require("body-parser"),
-    cors = require("cors");
+  routes = require("./apiRoutes"),
+  mongoose = require("./helpers/db"),
+  path = require("path"),
+  dotenv = require("dotenv"),
+  bodyParser = require("body-parser"),
+  cors = require("cors");
 
 dotenv.config({path: path.resolve(__dirname, ".env")});
 
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 // Routes
 routes(app);
 
-app.use((error, req, res) => {
+app.use((error, req, res, next) => {
   console.error(error);
 
   // If error has status code specified

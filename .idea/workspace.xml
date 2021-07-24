@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Fixed login behavior&#10;&#10;no issue&#10;- Dashboard view now checks for both initial and Google Login before continuing">
+    <list default="true" id="b56c01f9-8a15-4aef-bfe4-57d29df6d0cc" name="Default" comment="Fixed error loggers by adding unused next parameter&#10;&#10;no issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -738,9 +735,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated dashboard to comply with the API changes, made removeStorage to return a promise instead of directly sending the response" />
     <MESSAGE value="Configured to use dotenv for environment variables" />
     <MESSAGE value="Added crypto" />
     <MESSAGE value="Configured dotenv paths" />
@@ -765,7 +762,8 @@
     <MESSAGE value="Configured updateRequestCount to also update year when needed" />
     <MESSAGE value="Added row count check" />
     <MESSAGE value="Fixed login behavior&#10;&#10;no issue&#10;- Dashboard view now checks for both initial and Google Login before continuing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed login behavior&#10;&#10;no issue&#10;- Dashboard view now checks for both initial and Google Login before continuing" />
+    <MESSAGE value="Fixed error loggers by adding unused next parameter&#10;&#10;no issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error loggers by adding unused next parameter&#10;&#10;no issue" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js" />
